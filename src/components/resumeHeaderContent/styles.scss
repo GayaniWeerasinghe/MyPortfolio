@@ -1,0 +1,36 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px dashed var(--yellow-theme-main-color);
+
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        line-height: 1rem;
+        text-transform: capitalize;
+        color: var(--yellow-theme-main-color);
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .download-button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #000;
+        background-color: var(--yellow-theme-main-color);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: var(--yellow-theme-main-color);
+        }
+    }
+}
