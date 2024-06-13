@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     background-color: var(--yellow-theme-nav-background-color);
     height: 80px;
     display: flex;
@@ -6,50 +6,53 @@
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
+    top: 0;
+    z-index: 1000;
 
-    &__container{
+    &__container {
         display: flex;
         align-items: center;
         width: 100%;
         height: inherit;
         padding: 0px 20px;
         flex: 1;
+        justify-content: space-between;
 
-        &__logo{
+        &__logo {
             color: var(--yellow-theme-main-color);
             cursor: pointer;
 
-            &__img{
+            &__img {
                 width: 40px;
                 height: 35px;
             }
         }
 
-        &__menu{
+        &__menu {
             display: flex;
             list-style: none;
             text-align: center;
 
-            &__item{
+            &__item {
                 line-height: 40px;
                 margin-right: 1.5rem;
                 font-size: 1.6rem;
 
-                &::after{
-                   content: '';
-                   display: block;
-                   height: 3px;
-                   width: 0;
-                   background: transparent;
-                   transition: all 0.5s ease;
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 0;
+                    background: transparent;
+                    transition: all 0.5s ease;
                 }
 
-                &:hover::after{
+                &:hover::after {
                     width: 100%;
                     background-color: var(--yellow-theme-main-color);
                 }
 
-                &__links{
+                &__links {
                     text-decoration: none;
                     padding: 0.5rem;
                     color: var(--yellow-theme-main-color);
@@ -57,40 +60,38 @@
             }
         }
     }
-
-    
 }
 
-.nav-icon{
+.nav-icon {
     display: none;
 }
 
-@media only screen and (max-width : 768px){
-    .navbar__container__menu{
+@media only screen and (max-width: 768px) {
+    .navbar__container__menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 200px;
         position: absolute;
         top: 80px;
-        left: -110%;
-        opacity: 1;
+        right: 0;
+        opacity: 0;
         transition: all 0.5s ease;
 
-        &.active{
+        &.active {
             background: #181818;
-            left: 0px;
+            right: 0;
             opacity: 1;
         }
 
-        &__item{
+        &__item {
             border-bottom: 1px solid #282828;
-            margin: 0px;
-            padding: 20px 0px;
+            margin: 0;
+            padding: 10px 0;
         }
     }
 
-    .nav-icon{
+    .nav-icon {
         display: block;
         cursor: pointer;
         color: var(--yellow-theme-main-color);

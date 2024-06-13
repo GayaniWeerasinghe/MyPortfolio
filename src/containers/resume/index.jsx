@@ -13,7 +13,7 @@ const Resume = () => {
     return (
         <section id="resume" className="resume">
             <ResumeHeaderContent
-                headerText="My Resume"
+                headerText="Resume"
                 // icon={<IoDocument size={40} />}
             />
             <div className="timeline">
