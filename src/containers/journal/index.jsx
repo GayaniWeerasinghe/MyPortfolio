@@ -15,16 +15,16 @@ const Journals = () => {
                 icon={<BsJournals size={40}/>}
             />
             <div className="timeline">
-                <div className="timeline__experience">
-                    <h4 className="timeline__experience__subhead">These Reflective Journals help me for my career development...</h4>
+                <div className="timeline__journal">
+                    <h4 className="timeline__journal__subhead">These Reflective Journals help me for my career development...</h4>
                     <VerticalTimeline
                         layout="1-column"
                         lineColor="var(--yellow-theme-main-color)"
                     >
-                        {details.experience.map((item, i) => (
+                        {details.journals.map((item, i) => (
                             <VerticalTimelineElement
                                 key={i}
-                                className="timeline__experience__verticle-timeline-element"
+                                className="timeline__journal__verticle-timeline-element"
                                 contentStyle={{
                                     background: 'none',
                                     color: 'var(--yellow-theme-sub-text-color)',

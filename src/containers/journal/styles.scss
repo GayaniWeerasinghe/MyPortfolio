@@ -6,10 +6,9 @@
     width: 100%;
     padding: 20px;
 
-    &__experience{
+    &__journal{
         width: 100%;
         gap: 2rem;
-        display: flex;
         align-items: center;
 
         &__header-text {
@@ -72,11 +71,12 @@
         }
     }
 
-    &__experience__subhead {
+    &__journal__subhead {
         color: var(--yellow-theme-sub-text-color);
         font-size: 16px;
         text-align: left; 
-        margin-left: 160px;
+        margin-left: 80px;
+        margin-bottom: 20px;
         font-weight: 100;
         width: 100%; 
     }
@@ -86,7 +86,7 @@
     .timeline {
         flex-direction: column;
 
-        &__experience{
+        &__journal{
             width: 100%;
             gap: 2rem;
 
@@ -94,7 +94,7 @@
                 color: var(--yellow-theme-sub-text-color);
                 font-size: 16px;
                 text-align: left; 
-                margin-left: 60px;
+                margin-left: 20px;
                 font-weight: 100;
                 width: 100%; 
             }

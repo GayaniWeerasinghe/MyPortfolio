@@ -1,5 +1,5 @@
 export const details = {
-    experience: [
+    journals: [
         {
             title : 'Journal of Business Communication (JBC)',
             description : 'JBC offers a range of research articles on business communication practices, including business writing, communication strategies, and the use of digital media in business communication.'
